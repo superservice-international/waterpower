@@ -1,12 +1,1 @@
-.app(flex layout="column")
-  md-fab-toolbar(flex="nogrow" md-direction="left")
-    md-fab-trigger.align-with-text
-      md-button(aria-label="menu" ).md-fab.md-primary
-        md-icon menu
-    md-toolbar
-      md-fab-actions.md-toolbar-tools
-        md-button(
-          ng-repeat="view in app.views" ng-click="app.goToView(view)"
-        ) {{view}}
-
-  md-content(flex ui-view layout="column" layout-align="start center")
+ng-outlet(layout='column' layout-fill)

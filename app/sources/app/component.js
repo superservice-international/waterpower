@@ -1,39 +1,32 @@
 import angular from 'angular';
+import componentRouter from '@angular/router/angular1/angular_1_router';
 import appViews from './views';
 
 
 class AppCtrl {
-  constructor($window, $state) {
-
-    let hideSplashScreen = new Event('hideSplashScreen');
-    $window.dispatchEvent(hideSplashScreen);
-
-    this._state = $state;
-    this.url = 'https://git.byteyard.de/plitzenberger/generator-byteyard-angular1-project';
-    this.views = [
-      'jobs'
-    ];
-  }
-
-  goToView(view){
-    this._state.go(view);
+  constructor($window, $rootRouter) {
+    this.$rootRouter = $rootRouter;
   }
 }
 
-let appComponent = () => {
-  return {
-    controller: 'appComponentCtrl',
-    controllerAs: 'app',
-    template: require('./component.jade')
-  };
+let appComponent = {
+  controller: 'appComponentCtrl',
+  controllerAs: 'app',
+  template: require('./component.jade')(),
+  $routeConfig: [
+    {path: '/', name: 'Memory', component: 'memoryCmp', useAsDefault: true},
+    {path: '/info', name: 'Info', component: 'infoCmp'},
+  ]
 };
 
 const MODULE_NAME = 'app.component';
 
 angular.module(MODULE_NAME, [
-  appViews
+  appViews,
+  'ngComponentRouter'
 ])
-  .directive('appComponent', appComponent)
+  .component('appComponent', appComponent)
+  .value('$routerRootComponent', 'appComponent')
   .controller('appComponentCtrl', AppCtrl);
 
 export default MODULE_NAME;
