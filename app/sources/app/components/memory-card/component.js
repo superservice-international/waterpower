@@ -1,9 +1,21 @@
+let finiteStateMachine = require('javascript-state-machine');
 
 class memoryCardCmpCtrl {
   /* @ngInject */
   constructor($log, $element) {
     this._log = $log;
     this.$element = $element;
+    this.fsm = finiteStateMachine.StateMachine.create({
+      initial: 'covered',
+      events: [
+        {name: 'turn', from: ['covered'], to: 'turned'},
+        {name: 'match', from: ['turned'], to: 'matched'},
+      ],
+      //callbacks: {
+        //onsubmit: _handleSubmit,
+        //onsuccess: _handleSuccess,
+      //}
+    });
   }
 }
 
@@ -11,7 +23,8 @@ let memoryCardCmp = {
   controller: 'memoryCardCmpCtrl',
   template: require('./component.jade')(),
   bindings: {
-    cardId: '@'
+    cardId: '@',
+    background: '@'
   },
 };
 

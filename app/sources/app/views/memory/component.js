@@ -22,6 +22,22 @@ class memoryCmpCtrl {
         id: 2,
         background: "yellow"
       },
+      {
+        id: 3,
+        background: "blue"
+      },
+      {
+        id: 3,
+        background: "blue"
+      },
+      {
+        id: 4,
+        background: "green"
+      },
+      {
+        id: 4,
+        background: "green"
+      },
     ];
     this.memoryCardsRandom = _.shuffle(this.memoryCards);
   }
