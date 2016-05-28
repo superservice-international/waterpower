@@ -10,4 +10,6 @@ div(layout="row" layout-wrap)
     ng-repeat="card in $ctrl.memoryCardsRandom"
     card-id="{{card.id}}"
     background="{{card.background}}"
+    state="{{card.state}}"
+    ng-click="$ctrl.turnCard(card)"
   )
