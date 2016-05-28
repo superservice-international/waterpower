@@ -21,10 +21,15 @@ let appComponent = {
 
 const MODULE_NAME = 'app.component';
 
+function locationConfig($locationProvider){
+  $locationProvider.html5Mode(true);
+}
+
 angular.module(MODULE_NAME, [
   appViews,
   'ngComponentRouter'
 ])
+  .config(locationConfig)
   .component('appComponent', appComponent)
   .value('$routerRootComponent', 'appComponent')
   .controller('appComponentCtrl', AppCtrl);
