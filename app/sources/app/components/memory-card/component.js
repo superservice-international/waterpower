@@ -10,7 +10,9 @@ class memoryCardCmpCtrl {
 let memoryCardCmp = {
   controller: 'memoryCardCmpCtrl',
   template: require('./component.jade')(),
-  bindings: {},
+  bindings: {
+    cardId: '@'
+  },
 };
 
 const MODULE_NAME = 'app.components.memoryCard.component';
