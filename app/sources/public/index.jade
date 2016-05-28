@@ -1,0 +1,23 @@
+doctype html
+html(ng-app='app', lang='en')
+  head
+    meta(charset='UTF-8')
+    title waterpower
+    link(rel='icon', type='image/x-icon', href='/img/favicon.ico')
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+    link(href="/splashscreen/please-wait/please-wait.css" rel="stylesheet")
+    link(href="/splashscreen/spinner/spinner.css" rel="stylesheet")
+    base(href='/')
+  body
+    app-component(layout="row" style="height:100%;")
+    script(type='text/javascript' src="splashscreen/please-wait/please-wait.min.js")
+    script(type='text/javascript').
+      window.loading_screen = window.pleaseWait({
+          logo: "img/applogo.png",
+          backgroundColor: '#f46d3b',
+          loadingHtml: '<div class="loader">Loading...</div>'
+      });
+
+      window.addEventListener('hideSplashScreen', function(){
+        window.loading_screen.finish();
+      });

@@ -1,0 +1,13 @@
+DEFAULT_FROM_EMAIL = 'info@byteyard.de'
+
+EMAIL_HOST = ''
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+SERVER_EMAIL = ''
+
+MANAGER_EMAIL = [
+    '',
+]

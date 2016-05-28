@@ -1,0 +1,1 @@
+MEDIAFILES_LOCATION = 'media'

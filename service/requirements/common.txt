@@ -1,0 +1,17 @@
+Django==1.9.5
+
+djangorestframework
+djangorestframework-jwt
+drf-nested-routers
+
+django-cors-headers
+django-filter
+django-polymorphic
+
+djoser
+
+dj-database-url
+ipython==4.1.2
+ipython-genutils==0.1.0
+ipdb==0.9.1
+psycopg2==2.6.1
