@@ -134,11 +134,24 @@ class memoryCmpCtrl {
     else if (card.state==='matched') {
       this._log.debug('open modal...');
 
-      let DialogCtrl = ($scope, $mdDialog) => {
+      let DialogCtrl = ($scope, $mdDialog, card) => {
+        $scope.card = card;
+
+        angular.extend($scope, {
+
+          center: {
+              lat: card.center.lat,
+              lng: card.center.lng,
+              zoom: 9
+          },
+          defaults: {
+              scrollWheelZoom: false
+          }
+        });
+
         $scope.close = () => {
           $mdDialog.hide();  
         }
-        $scope.center = this.center;
       }
       
       this.$mdDialog.show({
@@ -148,9 +161,7 @@ class memoryCmpCtrl {
         clickOutsideToClose:true,
         locals: {
           card: card
-        },
-        bindToController: true,
-        controllerAs: 'ctrl'
+        }
       })
     }
   }
