@@ -11,42 +11,50 @@ class memoryCmpCtrl {
       {
         id: 1,
         background: "red",
-        state: 'covered'
+        state: 'covered',
+        image: require('./truck_1.jpg')
       },
       {
         id: 1,
         background: "red",
-        state: 'covered'
+        state: 'covered',
+        image: require('./truck_1.jpg')
       },
       {
         id: 2,
         background: "yellow",
-        state: 'covered'
+        state: 'covered',
+        image: require('./truck_2.jpg')
       },
       {
         id: 2,
         background: "yellow",
-        state: 'covered'
+        state: 'covered',
+        image: require('./truck_2.jpg')
       },
       {
         id: 3,
         background: "blue",
-        state: 'covered'
+        state: 'covered',
+        image: require('./truck_3.jpg')
       },
       {
         id: 3,
         background: "blue",
-        state: 'covered'
+        state: 'covered',
+        image: require('./truck_3.jpg')
       },
       {
         id: 4,
         background: "green",
-        state: 'covered'
+        state: 'covered',
+        image: require('./truck_4.jpg')
       },
       {
         id: 4,
         background: "green",
-        state: 'covered'
+        state: 'covered',
+        image: require('./truck_4.jpg')
       },
     ];
     this.memoryCardsRandom = _.shuffle(this.memoryCards);
@@ -64,6 +72,8 @@ class memoryCmpCtrl {
         {name: 'reset', from: ['win'], to: 'pristine'},
       ]
     });
+
+    this._flexComponent();
   }
   
   turnCard(card){
@@ -106,7 +116,7 @@ class memoryCmpCtrl {
             this._clearSelection();
             this.fsm.proceede();
           }
-          this.$timeout(callback, 2000);
+          this.$timeout(callback, 1000);
         }
         break;
     }
@@ -135,6 +145,10 @@ class memoryCmpCtrl {
   _clearSelection(){
     this.firstTurn = undefined;
     this.secondTurn = undefined;
+  }
+
+  _flexComponent(){
+     this.$element.addClass('layout-column flex');
   }
 
 }

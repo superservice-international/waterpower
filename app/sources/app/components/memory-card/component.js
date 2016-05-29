@@ -18,7 +18,8 @@ let memoryCardCmp = {
   bindings: {
     cardId: '@',
     background: '@',
-    state: '@'
+    state: '@',
+    image: '@'
   },
 };
 

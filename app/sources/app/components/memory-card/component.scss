@@ -1,3 +1,20 @@
 memory-card-cmp{
   cursor: pointer;
+  display: block;
+  position: relative;
+
+  img{
+    border-radius: 2px;
+  }
+
+  .overlay{
+    border-radius: 2px;
+    position: absolute;
+    margin: 8px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+  }
 }

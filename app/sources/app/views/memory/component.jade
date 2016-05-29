@@ -7,16 +7,21 @@ md-toolbar
     md-button.md-icon-button
       md-icon info_outline
 
-div(layout="row" layout-wrap)
-  memory-card-cmp(
-    flex="25"
-    ng-repeat="card in $ctrl.memoryCardsRandom"
-    card-id="{{card.id}}"
-    background="{{card.background}}"
-    state="{{card.state}}"
-    ng-click="$ctrl.turnCard(card)"
-  )
-div(ng-show="$ctrl.fsm.current==='win'")
-  p looks like we have a winner!
-  md-button.md-fab(ng-click="$ctrl.resetGame()")
-    md-icon replay
+div(layout="row" layout-align="center" flex)
+  div(layout="column" flex="50")
+
+    div(layout="row" layout-wrap)
+      memory-card-cmp(
+        flex="25"
+        ng-repeat="card in $ctrl.memoryCardsRandom"
+        card-id="{{card.id}}"
+        background="{{card.background}}"
+        image="{{card.image}}"
+        state="{{card.state}}"
+        ng-click="$ctrl.turnCard(card)"
+      )
+
+    div(ng-show="$ctrl.fsm.current==='win'")
+      p looks like we have a winner!
+      md-button.md-fab(ng-click="$ctrl.resetGame()")
+        md-icon replay
