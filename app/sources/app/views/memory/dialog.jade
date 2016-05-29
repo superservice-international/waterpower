@@ -1,1 +1,11 @@
-h1 dialog
+md-dialog
+  md-toolbar
+    .md-toolbar-tools
+      span(flex)
+      md-button.md-icon-button(ng-click="close()")
+        md-icon close
+
+  md-dialog-content(layout="row" layout-align="space-between start")
+    img(src="{{ctrl.card.image}}" flex="33")
+    div(flex="33")
+      p {{ctrl.card.info}}

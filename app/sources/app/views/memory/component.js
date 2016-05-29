@@ -12,42 +12,50 @@ class memoryCmpCtrl {
       {
         id: 1,
         state: 'covered',
-        image: require('./truck_1.jpg')
+        image: require('./truck_1.jpg'),
+        info: 'Etiam Lorem Amet Fermentum'
       },
       {
         id: 1,
         state: 'covered',
-        image: require('./truck_1.jpg')
+        image: require('./truck_1.jpg'),
+        info: 'Etiam Lorem Amet Fermentum'
       },
       {
         id: 2,
         state: 'covered',
-        image: require('./truck_2.jpg')
+        image: require('./truck_2.jpg'),
+        info: 'Etiam Lorem Amet Fermentum'
       },
       {
         id: 2,
         state: 'covered',
-        image: require('./truck_2.jpg')
+        image: require('./truck_2.jpg'),
+        info: 'Etiam Lorem Amet Fermentum'
       },
       {
         id: 3,
         state: 'covered',
-        image: require('./truck_3.jpg')
+        image: require('./truck_3.jpg'),
+        info: 'Etiam Lorem Amet Fermentum'
       },
       {
         id: 3,
         state: 'covered',
-        image: require('./truck_3.jpg')
+        image: require('./truck_3.jpg'),
+        info: 'Etiam Lorem Amet Fermentum'
       },
       {
         id: 4,
         state: 'covered',
-        image: require('./truck_4.jpg')
+        image: require('./truck_4.jpg'),
+        info: 'Etiam Lorem Amet Fermentum'
       },
       {
         id: 4,
         state: 'covered',
-        image: require('./truck_4.jpg')
+        image: require('./truck_4.jpg'),
+        info: 'Etiam Lorem Amet Fermentum'
       },
     ];
     this.memoryCardsRandom = _.shuffle(this.memoryCards);
@@ -87,11 +95,23 @@ class memoryCmpCtrl {
     }
     else if (card.state==='matched') {
       this._log.debug('open modal...');
+
+      let DialogCtrl = ($scope, $mdDialog) => {
+        $scope.close = () => {
+          $mdDialog.hide();  
+        }
+      }
       
       this.$mdDialog.show({
-        //controller: DialogController,
+        controller: DialogCtrl,
         template: require('./dialog.jade')(),
+        parent: angular.element(document.body),
         clickOutsideToClose:true,
+        locals: {
+          card: card
+        },
+        bindToController: true,
+        controllerAs: 'ctrl'
       })
     }
   }
