@@ -16,3 +16,7 @@ div(layout="row" layout-wrap)
     state="{{card.state}}"
     ng-click="$ctrl.turnCard(card)"
   )
+div(ng-show="$ctrl.fsm.current==='win'")
+  p looks like we have a winner!
+  md-button.md-fab(ng-click="$ctrl.resetGame()")
+    md-icon replay

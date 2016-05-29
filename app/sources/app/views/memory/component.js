@@ -60,7 +60,8 @@ class memoryCmpCtrl {
         {name: 'firstTurn', from: ['pristine'], to: 'firstTurned'},
         {name: 'secondTurn', from: ['firstTurned'], to: 'secondTurned'},
         {name: 'proceede', from: ['secondTurned'], to: 'pristine'},
-        {name: 'win', from: ['secondTurned'], to: 'win'},
+        {name: 'win', from: ['pristine'], to: 'win'},
+        {name: 'reset', from: ['win'], to: 'pristine'},
       ]
     });
   }
@@ -80,6 +81,9 @@ class memoryCmpCtrl {
           break;
       }
       this.evaluateRound();
+    }
+    else if (card.state==='matched') {
+      this._log.debug('open modal...');
     }
   }
 
@@ -109,15 +113,23 @@ class memoryCmpCtrl {
   }
 
   evaluateGame() {
-    let covered = _.find(this.memoryCardsRandom, function(o) {
+    let covered = _.filter(this.memoryCardsRandom, function(o) {
       return o.state === 'covered'; 
     });
-    debugger
+    if (!covered.length) {
+      this.fsm.win();
+      this._log.debug('we have a winner...');
+    }
   }
 
 
   resetGame() {
+    _.forEach(this.memoryCardsRandom, function(value) {
+      value.state = 'covered'; 
+    });
 
+    this.memoryCardsRandom = _.shuffle(this.memoryCards);
+    this.fsm.reset();
   }
 
   _clearSelection(){
