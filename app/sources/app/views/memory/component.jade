@@ -2,13 +2,16 @@ md-toolbar
   .md-toolbar-tools
     h2 waterpower
     span(flex)
-    md-button.md-icon-button
+    md-button.md-icon-button(ng-link="['Memory']")
       md-icon play_circle_outline
-    md-button.md-icon-button
+    md-button.md-icon-button(ng-link="['Info']")
       md-icon info_outline
 
 div(layout="row" layout-align="center" flex)
   div(layout="column" flex-xl="50" flex-lg="75")
+
+    div
+      h1 memorycity
 
     div(layout="row" layout-wrap)
       memory-card-cmp(
