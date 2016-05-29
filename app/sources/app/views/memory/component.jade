@@ -15,13 +15,13 @@ div(layout="row" layout-align="center" flex)
         flex="25"
         ng-repeat="card in $ctrl.memoryCardsRandom"
         card-id="{{card.id}}"
-        background="{{card.background}}"
         image="{{card.image}}"
         state="{{card.state}}"
         ng-click="$ctrl.turnCard(card)"
       )
 
-    div(ng-show="$ctrl.fsm.current==='win'")
+    div(ng-show="$ctrl.fsm.current==='win'" layout="column" layout-align="center center")
       p looks like we have a winner!
+
       md-button.md-fab(ng-click="$ctrl.resetGame()")
         md-icon replay

@@ -3,56 +3,49 @@ let finiteStateMachine = require('javascript-state-machine');
 
 class memoryCmpCtrl {
   /* @ngInject */
-  constructor($log, $element, $timeout) {
+  constructor($log, $element, $timeout, $mdDialog) {
     this._log = $log;
     this.$element = $element;
     this.$timeout = $timeout;
+    this.$mdDialog = $mdDialog;
     this.memoryCards = [
       {
         id: 1,
-        background: "red",
         state: 'covered',
         image: require('./truck_1.jpg')
       },
       {
         id: 1,
-        background: "red",
         state: 'covered',
         image: require('./truck_1.jpg')
       },
       {
         id: 2,
-        background: "yellow",
         state: 'covered',
         image: require('./truck_2.jpg')
       },
       {
         id: 2,
-        background: "yellow",
         state: 'covered',
         image: require('./truck_2.jpg')
       },
       {
         id: 3,
-        background: "blue",
         state: 'covered',
         image: require('./truck_3.jpg')
       },
       {
         id: 3,
-        background: "blue",
         state: 'covered',
         image: require('./truck_3.jpg')
       },
       {
         id: 4,
-        background: "green",
         state: 'covered',
         image: require('./truck_4.jpg')
       },
       {
         id: 4,
-        background: "green",
         state: 'covered',
         image: require('./truck_4.jpg')
       },
@@ -94,6 +87,12 @@ class memoryCmpCtrl {
     }
     else if (card.state==='matched') {
       this._log.debug('open modal...');
+      
+      this.$mdDialog.show({
+        //controller: DialogController,
+        template: require('./dialog.jade')(),
+        clickOutsideToClose:true,
+      })
     }
   }
 

@@ -17,7 +17,6 @@ let memoryCardCmp = {
   template: require('./component.jade')(),
   bindings: {
     cardId: '@',
-    background: '@',
     state: '@',
     image: '@'
   },
