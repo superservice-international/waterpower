@@ -61,15 +61,12 @@ class memoryCmpCtrl {
         {name: 'secondTurn', from: ['firstTurned'], to: 'secondTurned'},
         {name: 'proceede', from: ['secondTurned'], to: 'pristine'},
         {name: 'win', from: ['secondTurned'], to: 'win'},
-      ],
-      //callbacks: {
-        //onmatch: this._onmatch,
-      //}
+      ]
     });
   }
   
   turnCard(card){
-    if (card.state==='covered') {
+    if (card.state==='covered' && ['pristine', 'firstTurned'].indexOf(this.fsm.current) > -1) {
       switch(this.fsm.current) {
         case 'pristine':
           card.state = 'turned';
@@ -82,14 +79,11 @@ class memoryCmpCtrl {
           this.fsm.secondTurn();
           break;
       }
-      this.evaluateState();
+      this.evaluateRound();
     }
   }
 
-  //_firstTurn(){
-  //}
-
-  evaluateState( ){
+  evaluateRound( ){
     this._log.debug('evaluating state...');
     switch(this.fsm.current) {
       case 'secondTurned':
@@ -99,6 +93,7 @@ class memoryCmpCtrl {
           this.secondTurn.state = 'matched';
           this._clearSelection();
           this.fsm.proceede();
+          this.evaluateGame();
         }
         else {
           let callback = () => {
@@ -111,6 +106,18 @@ class memoryCmpCtrl {
         }
         break;
     }
+  }
+
+  evaluateGame() {
+    let covered = _.find(this.memoryCardsRandom, function(o) {
+      return o.state === 'covered'; 
+    });
+    debugger
+  }
+
+
+  resetGame() {
+
   }
 
   _clearSelection(){
