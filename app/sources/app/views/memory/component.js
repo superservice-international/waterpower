@@ -3,9 +3,10 @@ let finiteStateMachine = require('javascript-state-machine');
 
 class memoryCmpCtrl {
   /* @ngInject */
-  constructor($log, $element) {
+  constructor($log, $element, $timeout) {
     this._log = $log;
     this.$element = $element;
+    this.$timeout = $timeout;
     this.memoryCards = [
       {
         id: 1,
@@ -100,10 +101,13 @@ class memoryCmpCtrl {
           this.fsm.proceede();
         }
         else {
-          this.firstTurn.state = 'covered';
-          this.secondTurn.state = 'covered';
-          this._clearSelection();
-          this.fsm.proceede();
+          let callback = () => {
+            this.firstTurn.state = 'covered';
+            this.secondTurn.state = 'covered';
+            this._clearSelection();
+            this.fsm.proceede();
+          }
+          this.$timeout(callback, 2000);
         }
         break;
     }
