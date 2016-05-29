@@ -1,4 +1,10 @@
 import _ from 'lodash';
+import simpleLogger from 'angular-simple-logger/dist/angular-simple-logger';
+
+import 'leaflet/dist/leaflet-src.js';
+import 'leaflet/dist/leaflet.css';
+import uiLeaflet from 'ui-leaflet';
+
 let finiteStateMachine = require('javascript-state-machine');
 
 class memoryCmpCtrl {
@@ -13,49 +19,81 @@ class memoryCmpCtrl {
         id: 1,
         state: 'covered',
         image: require('./truck_1.jpg'),
-        info: 'Etiam Lorem Amet Fermentum'
+        info: 'Etiam Lorem Amet Fermentum',
+        center: {
+          lat: 5.5912087,
+          lng: -0.1797294
+        }
       },
       {
         id: 1,
         state: 'covered',
         image: require('./truck_1.jpg'),
-        info: 'Etiam Lorem Amet Fermentum'
+        info: 'Etiam Lorem Amet Fermentum',
+        center: {
+          lat: 5.5912087,
+          lng: -0.1797294
+        }
       },
       {
         id: 2,
         state: 'covered',
         image: require('./truck_2.jpg'),
-        info: 'Etiam Lorem Amet Fermentum'
+        info: 'Etiam Lorem Amet Fermentum',
+        center: {
+          lat: 5.5912087,
+          lng: -0.1797294
+        }
       },
       {
         id: 2,
         state: 'covered',
         image: require('./truck_2.jpg'),
-        info: 'Etiam Lorem Amet Fermentum'
+        info: 'Etiam Lorem Amet Fermentum',
+        center: {
+          lat: 5.5912087,
+          lng: -0.1797294
+        }
       },
       {
         id: 3,
         state: 'covered',
         image: require('./truck_3.jpg'),
-        info: 'Etiam Lorem Amet Fermentum'
+        info: 'Etiam Lorem Amet Fermentum',
+        center: {
+          lat: 5.5912087,
+          lng: -0.1797294
+        }
       },
       {
         id: 3,
         state: 'covered',
         image: require('./truck_3.jpg'),
-        info: 'Etiam Lorem Amet Fermentum'
+        info: 'Etiam Lorem Amet Fermentum',
+        center: {
+          lat: 5.5912087,
+          lng: -0.1797294
+        }
       },
       {
         id: 4,
         state: 'covered',
         image: require('./truck_4.jpg'),
-        info: 'Etiam Lorem Amet Fermentum'
+        info: 'Etiam Lorem Amet Fermentum',
+        center: {
+          lat: 5.5912087,
+          lng: -0.1797294
+        }
       },
       {
         id: 4,
         state: 'covered',
         image: require('./truck_4.jpg'),
-        info: 'Etiam Lorem Amet Fermentum'
+        info: 'Etiam Lorem Amet Fermentum',
+        center: {
+          lat: 5.5912087,
+          lng: -0.1797294
+        }
       },
     ];
     this.memoryCardsRandom = _.shuffle(this.memoryCards);
@@ -100,6 +138,7 @@ class memoryCmpCtrl {
         $scope.close = () => {
           $mdDialog.hide();  
         }
+        $scope.center = this.center;
       }
       
       this.$mdDialog.show({
@@ -182,6 +221,8 @@ let memoryCmp = {
 const MODULE_NAME = 'app.views.memoryCmp.component';
 
 angular.module(MODULE_NAME, [
+  'nemLogging',
+  'ui-leaflet',
 ])
   .component('memoryCmp', memoryCmp)
   .controller('memoryCmpCtrl', memoryCmpCtrl);

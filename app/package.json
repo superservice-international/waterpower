@@ -32,6 +32,7 @@
     "angular-jwt": "0.0.9",
     "angular-material": "^1.0.6",
     "angular-messages": "^1.5.0",
+    "angular-simple-logger": "^0.1.7",
     "api-check": "^7.0.0",
     "javascript-state-machine": "^2.3.5",
     "jquery": "^2.2.3",
@@ -41,7 +42,8 @@
     "material-design-icons": "^2.2.3",
     "ng-device-detector": "^3.0.1",
     "ng-file-upload": "^6.2.1",
-    "please-wait": "0.0.5"
+    "please-wait": "0.0.5",
+    "ui-leaflet": "^1.0.0"
   },
   "devDependencies": {
     "angular-mocks": "^1.5.0",
