@@ -1,1 +1,0 @@
-MEDIAFILES_LOCATION = 'media'
