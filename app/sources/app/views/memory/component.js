@@ -175,6 +175,26 @@ class memoryCmpCtrl {
           lng: -0.1797294
         }
       },
+      {
+        id: 9,
+        state: 'covered',
+        image: require('./image_09.jpg'),
+        info: 'Etiam Lorem Amet Fermentum',
+        center: {
+          lat: 5.5912087,
+          lng: -0.1797294
+        }
+      },
+      {
+        id: 9,
+        state: 'covered',
+        image: require('./image_09.jpg'),
+        info: 'Etiam Lorem Amet Fermentum',
+        center: {
+          lat: 5.5912087,
+          lng: -0.1797294
+        }
+      },
     ];
     this.memoryCardsRandom = _.shuffle(this.memoryCards);
 

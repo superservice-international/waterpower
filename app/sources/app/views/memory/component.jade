@@ -8,16 +8,17 @@ md-toolbar
       md-icon info_outline
 
 div(layout="row" layout-align="center" flex)
-  div(layout="column" flex-xl="40" flex-lg="50" flex-md="50" flex-sm="75")
+  div(layout="column" flex-xl="60" flex-lg="75" flex-md="80")
 
     div
       h1 memory city contest
       p Euismod cras mattis consectetur purus sit amet fermentum..
+      p Once you have a match, click on the pictures for more info!
 
     md-content
-      div(layout="row" layout-wrap)
+      div(layout="row" layout-wrap layout-align="center")
         memory-card-cmp(
-          flex="25"
+          flex="15"
           ng-repeat="card in $ctrl.memoryCardsRandom"
           card-id="{{card.id}}"
           image="{{card.image}}"
