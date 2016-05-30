@@ -167,6 +167,11 @@ module.exports = function makeWebpackConfig () {
     new webpack.ProvidePlugin({
       "window.jQuery": "jquery",
       "window.$": "jquery",
+    }),
+    new ngAnnotatePlugin({
+      add: true,
+      // other ng-annotate options here
+      //         
     })
   ];
 

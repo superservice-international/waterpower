@@ -1,9 +1,12 @@
 import materialDesign from 'angular-material';
 
 
+/* @ngInject */
 let themeConfig = ($mdThemingProvider) => {
   $mdThemingProvider
-    .theme('default');
+    .theme('default')
+    .primaryPalette('grey')
+    .accentPalette('red');
 
   //$mdThemingProvider.definePalette('customPrimaryPalette', {
     //'50': 'DFE0E1',
@@ -83,18 +86,18 @@ let themeConfig = ($mdThemingProvider) => {
 
   //$mdThemingProvider
     //.theme('default')
-    //.primaryPalette('customPrimaryPalette', {
+    //.primaryPalette('grey', {
       //'default': '500',
       //'hue-1': '50',
       //'hue-2': '300',
       //'hue-3': '700',
     //})
-    //.accentPalette('customAccentPalette', {
+    //.accentPalette('red', {
       //'default': '500',
       //'hue-1': '50',
       //'hue-2': '700',
       //'hue-3': '900',
-    //})
+    //});
     //.warnPalette('customWarnPalette', {
       //'default': '500',
       //'hue-1': '100',

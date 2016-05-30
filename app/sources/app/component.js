@@ -4,6 +4,7 @@ import appViews from './views';
 
 
 class AppCtrl {
+  /* @ngInject */
   constructor($window, $rootRouter) {
     this.$rootRouter = $rootRouter;
   }
@@ -21,6 +22,7 @@ let appComponent = {
 
 const MODULE_NAME = 'app.component';
 
+/* @ngInject */
 function locationConfig($locationProvider){
   $locationProvider.html5Mode(true);
 }
