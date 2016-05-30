@@ -18,7 +18,7 @@ class memoryCmpCtrl {
       {
         id: 1,
         state: 'covered',
-        image: require('./truck_1.jpg'),
+        image: require('./image_01.jpg'),
         info: 'Etiam Lorem Amet Fermentum',
         center: {
           lat: 5.5912087,
@@ -28,7 +28,7 @@ class memoryCmpCtrl {
       {
         id: 1,
         state: 'covered',
-        image: require('./truck_1.jpg'),
+        image: require('./image_01.jpg'),
         info: 'Etiam Lorem Amet Fermentum',
         center: {
           lat: 5.5912087,
@@ -38,7 +38,7 @@ class memoryCmpCtrl {
       {
         id: 2,
         state: 'covered',
-        image: require('./truck_2.jpg'),
+        image: require('./image_02.jpg'),
         info: 'Etiam Lorem Amet Fermentum',
         center: {
           lat: 5.5912087,
@@ -48,7 +48,7 @@ class memoryCmpCtrl {
       {
         id: 2,
         state: 'covered',
-        image: require('./truck_2.jpg'),
+        image: require('./image_02.jpg'),
         info: 'Etiam Lorem Amet Fermentum',
         center: {
           lat: 5.5912087,
@@ -58,7 +58,7 @@ class memoryCmpCtrl {
       {
         id: 3,
         state: 'covered',
-        image: require('./truck_3.jpg'),
+        image: require('./image_03.jpg'),
         info: 'Etiam Lorem Amet Fermentum',
         center: {
           lat: 5.5912087,
@@ -68,7 +68,7 @@ class memoryCmpCtrl {
       {
         id: 3,
         state: 'covered',
-        image: require('./truck_3.jpg'),
+        image: require('./image_03.jpg'),
         info: 'Etiam Lorem Amet Fermentum',
         center: {
           lat: 5.5912087,
@@ -78,7 +78,7 @@ class memoryCmpCtrl {
       {
         id: 4,
         state: 'covered',
-        image: require('./truck_4.jpg'),
+        image: require('./image_04.jpg'),
         info: 'Etiam Lorem Amet Fermentum',
         center: {
           lat: 5.5912087,
@@ -88,7 +88,87 @@ class memoryCmpCtrl {
       {
         id: 4,
         state: 'covered',
-        image: require('./truck_4.jpg'),
+        image: require('./image_04.jpg'),
+        info: 'Etiam Lorem Amet Fermentum',
+        center: {
+          lat: 5.5912087,
+          lng: -0.1797294
+        }
+      },
+      {
+        id: 5,
+        state: 'covered',
+        image: require('./image_05.jpg'),
+        info: 'Etiam Lorem Amet Fermentum',
+        center: {
+          lat: 5.5912087,
+          lng: -0.1797294
+        }
+      },
+      {
+        id: 5,
+        state: 'covered',
+        image: require('./image_05.jpg'),
+        info: 'Etiam Lorem Amet Fermentum',
+        center: {
+          lat: 5.5912087,
+          lng: -0.1797294
+        }
+      },
+      {
+        id: 6,
+        state: 'covered',
+        image: require('./image_06.jpg'),
+        info: 'Etiam Lorem Amet Fermentum',
+        center: {
+          lat: 5.5912087,
+          lng: -0.1797294
+        }
+      },
+      {
+        id: 6,
+        state: 'covered',
+        image: require('./image_06.jpg'),
+        info: 'Etiam Lorem Amet Fermentum',
+        center: {
+          lat: 5.5912087,
+          lng: -0.1797294
+        }
+      },
+      {
+        id: 7,
+        state: 'covered',
+        image: require('./image_07.jpg'),
+        info: 'Etiam Lorem Amet Fermentum',
+        center: {
+          lat: 5.5912087,
+          lng: -0.1797294
+        }
+      },
+      {
+        id: 7,
+        state: 'covered',
+        image: require('./image_07.jpg'),
+        info: 'Etiam Lorem Amet Fermentum',
+        center: {
+          lat: 5.5912087,
+          lng: -0.1797294
+        }
+      },
+      {
+        id: 8,
+        state: 'covered',
+        image: require('./image_08.jpg'),
+        info: 'Etiam Lorem Amet Fermentum',
+        center: {
+          lat: 5.5912087,
+          lng: -0.1797294
+        }
+      },
+      {
+        id: 8,
+        state: 'covered',
+        image: require('./image_08.jpg'),
         info: 'Etiam Lorem Amet Fermentum',
         center: {
           lat: 5.5912087,
