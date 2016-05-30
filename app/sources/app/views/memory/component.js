@@ -240,6 +240,7 @@ class memoryCmpCtrl {
         template: require('./dialog.jade')(),
         parent: angular.element(document.body),
         clickOutsideToClose:true,
+        fullscreen: true,
         locals: {
           card: card
         }
