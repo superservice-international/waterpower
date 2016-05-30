@@ -1,6 +1,6 @@
 md-toolbar
   .md-toolbar-tools
-    h2 waterpower
+    h2 memorycontenst.city
     span(flex)
     md-button.md-icon-button(ng-link="['Memory']")
       md-icon play_circle_outline
@@ -8,11 +8,9 @@ md-toolbar
       md-icon info_outline
 
 div(layout="row" layout-align="center" flex)
-  div(layout="column" flex-xl="60" flex-lg="75" flex-md="80")
+  div(layout="column" flex-xl="70" flex-lg="75" flex-md="80")
 
-    div
-      h1 memory city contest
-      p Euismod cras mattis consectetur purus sit amet fermentum..
+    div(layout="row" layout-align="center")
       p Once you have a match, click on the pictures for more info!
 
     md-content
@@ -26,11 +24,9 @@ div(layout="row" layout-align="center" flex)
           ng-click="$ctrl.turnCard(card)"
         )
 
-    div(ng-show="$ctrl.fsm.current==='win'" layout="column" layout-align="center center")
-      p looks like we have a winner!
-
+    div(ng-show="$ctrl.fsm.current==='win'" layout="row" layout-align="end")
       md-button.md-fab(ng-click="$ctrl.resetGame()")
         md-icon replay
 
-.md-accent(layout-padding)
-  p copyright waterpower + superservice-international.com
+//.md-accent(layout-padding)
+  //p copyright waterpower + superservice-international.com
