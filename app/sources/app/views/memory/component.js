@@ -299,7 +299,18 @@ class memoryCmpCtrl {
     });
     if (!covered.length) {
       this.fsm.win();
-      this._log.debug('we have a winner...');
+
+      let alert = this.$mdDialog.alert({
+        title: 'Congratulations!',
+        textContent: 'You won the game.',
+        ok: 'Close'
+      });
+
+      this.$mdDialog
+        .show( alert )
+        .finally(function() {
+          alert = undefined;
+        });
     }
   }
 
