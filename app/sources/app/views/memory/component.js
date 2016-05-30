@@ -134,6 +134,7 @@ class memoryCmpCtrl {
     else if (card.state==='matched') {
       this._log.debug('open modal...');
 
+      /* @ngInject */
       let DialogCtrl = ($scope, $mdDialog, card) => {
         $scope.card = card;
 
