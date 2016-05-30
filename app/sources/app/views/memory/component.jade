@@ -10,13 +10,17 @@ md-toolbar
 div(layout="row" layout-align="center" flex)
   div(layout="column" flex-xl="70" flex-lg="75" flex-md="80")
 
-    div(layout="row" layout-align="center")
+    div(layout="row" layout-align="center" flex="none")
       p Once you have a match, click on the pictures for more info!
+
+    div(layout="row" layout-align="center" hide-gt-xs flex="none")
+      p For a better user experience, use a bigger screen if possible.
 
     md-content
       div(layout="row" layout-wrap layout-align="center")
         memory-card-cmp(
-          flex="15"
+          flex-xs="33"
+          flex-gt-xs="15"
           ng-repeat="card in $ctrl.memoryCardsRandom"
           card-id="{{card.id}}"
           image="{{card.image}}"
@@ -28,5 +32,16 @@ div(layout="row" layout-align="center" flex)
       md-button.md-fab(ng-click="$ctrl.resetGame()")
         md-icon replay
 
-//.md-accent(layout-padding)
-  //p copyright waterpower + superservice-international.com
+footer(layout="row" layout-align="space-around" layout-padding layout-wrap)
+  div(flex-xl="10" flex-lg="15" flex-xs="50" flex-md="20" flex-sm="20")
+    a(href="http://www.waterpower.science" target="_blank")
+      img(src="/img/WaterPower_Logo.png")
+  div(flex-xl="10" flex-lg="15" flex-xs="50" flex-md="20" flex-sm="20")
+    img(src="/img/DLR_2015_trans.png")
+  div(flex-xl="5" flex-lg="10" flex-xs="50" flex-md="20" flex-sm="20")
+    img(src="/img/BMBF_2015_trans.png")
+  div(flex-xl="5" flex-lg="10" flex-xs="50" flex-md="20" flex-sm="20")
+    img(src="/img/claim_fona_en.jpg")
+  div(flex-xl="10" flex-lg="15" flex-xs="50" flex-md="20" flex-sm="20")
+    a(href="http://www.superservice-international.com" target="_blank")
+      img(src="/img/superservice.png")
