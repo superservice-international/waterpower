@@ -18,181 +18,199 @@ class memoryCmpCtrl {
       {
         id: 1,
         state: 'covered',
-        image: require('./image_01.jpg'),
-        info: 'Etiam Lorem Amet Fermentum',
+        image: require('./keep_off.jpg'),
+        title: 'Keep off!',
+        info: 'Pressure for land for housing triggers disputes over land acquisition. In order to maintain their access to land urban and peri-urban dwellers build small structures or walls on their land and set up signs indicating the land has been already acquired.',
         center: {
-          lat: 5.5912087,
-          lng: -0.1797294
+          lat: 5.579660,
+          lng: -0.177372
         }
       },
       {
         id: 1,
         state: 'covered',
-        image: require('./image_01.jpg'),
-        info: 'Etiam Lorem Amet Fermentum',
+        image: require('./keep_off.jpg'),
+        title: 'Keep off!',
+        info: 'Pressure for land for housing triggers disputes over land acquisition. In order to maintain their access to land urban and peri-urban dwellers build small structures or walls on their land and set up signs indicating the land has been already acquired.',
         center: {
-          lat: 5.5912087,
-          lng: -0.1797294
+          lat: 5.579660,
+          lng: -0.177372
         }
       },
       {
         id: 2,
         state: 'covered',
-        image: require('./image_02.jpg'),
-        info: 'Etiam Lorem Amet Fermentum',
+        image: require('./urban_ag.jpg'),
+        title: 'Urban Agriculture.',
+        info: 'Urban Agriculture accounts for 90% of the vegetables produced and consumed in Accra. Yet, many of the farmers face land insecurity and challenges in accessing safe water for irrigation.',
         center: {
-          lat: 5.5912087,
-          lng: -0.1797294
+          lat: 5.610521,
+          lng: -0.202300
         }
       },
       {
         id: 2,
         state: 'covered',
-        image: require('./image_02.jpg'),
-        info: 'Etiam Lorem Amet Fermentum',
+        image: require('./urban_ag.jpg'),
+        title: 'Urban Agriculture.',
+        info: 'Urban Agriculture accounts for 90% of the vegetables produced and consumed in Accra. Yet, many of the farmers face land insecurity and challenges in accessing safe water for irrigation.',
         center: {
-          lat: 5.5912087,
-          lng: -0.1797294
+          lat: 5.610521,
+          lng: -0.202300
         }
       },
       {
         id: 3,
         state: 'covered',
-        image: require('./image_03.jpg'),
-        info: 'Etiam Lorem Amet Fermentum',
+        image: require('./luxury_housing.jpg'),
+        title: 'Luxury housing in the wetland, Densu Delta',
+        info: 'Sakumo Lagoon, Korle Lagoon and the delta of the Densu river located in Accra experience heavy encroachment due the rapid and uneven urbanization dynamics. Yet, not only poor urban dwellers encroach into wetlands but also luxury houses are built within the wetlands.',
         center: {
-          lat: 5.5912087,
-          lng: -0.1797294
+          lat: 5.556054,
+          lng: -0.278178
         }
       },
       {
         id: 3,
         state: 'covered',
-        image: require('./image_03.jpg'),
-        info: 'Etiam Lorem Amet Fermentum',
+        image: require('./luxury_housing.jpg'),
+        title: 'Luxury housing in the wetland, Densu Delta',
+        info: 'Sakumo Lagoon, Korle Lagoon and the delta of the Densu river located in Accra experience heavy encroachment due the rapid and uneven urbanization dynamics. Yet, not only poor urban dwellers encroach into wetlands but also luxury houses are built within the wetlands.',
         center: {
-          lat: 5.5912087,
-          lng: -0.1797294
+          lat: 5.556054,
+          lng: -0.278178
         }
       },
       {
         id: 4,
         state: 'covered',
-        image: require('./image_04.jpg'),
-        info: 'Etiam Lorem Amet Fermentum',
+        image: require('./water_sachet.jpg'),
+        title: 'Clean water!',
+        info: 'Sachet water, consist of 500ml plastic bags of water heat-sealed. Popularly referred as Pure Water, its presence everywhere, low price together with the general perception of higher quality than tap water made it one of the main drinking water source for people living and working in Accra. But it is also convenient for cleaning hands.',
         center: {
-          lat: 5.5912087,
-          lng: -0.1797294
+          lat: 5.549885,
+          lng: -0.207756
         }
       },
       {
         id: 4,
         state: 'covered',
-        image: require('./image_04.jpg'),
-        info: 'Etiam Lorem Amet Fermentum',
+        image: require('./water_sachet.jpg'),
+        title: 'Clean water!',
+        info: 'Sachet water, consist of 500ml plastic bags of water heat-sealed. Popularly referred as Pure Water, its presence everywhere, low price together with the general perception of higher quality than tap water made it one of the main drinking water source for people living and working in Accra. But it is also convenient for cleaning hands.',
         center: {
-          lat: 5.5912087,
-          lng: -0.1797294
+          lat: 5.549885,
+          lng: -0.207756
         }
       },
       {
         id: 5,
         state: 'covered',
-        image: require('./image_05.jpg'),
-        info: 'Etiam Lorem Amet Fermentum',
+        image: require('./water_buckets.jpg'),
+        title: 'Buckets queuing at the standpipe.',
+        info: 'Community standpipes are present in areas where residents cannot afford a household connection. Yet, the water is not flowing 24/7. Thus in the early morning and evening hours people and buckets form long queues waiting for water.',
         center: {
-          lat: 5.5912087,
-          lng: -0.1797294
+          lat: 5.705077,
+          lng: -0.214591
         }
       },
       {
         id: 5,
         state: 'covered',
-        image: require('./image_05.jpg'),
-        info: 'Etiam Lorem Amet Fermentum',
+        image: require('./water_buckets.jpg'),
+        title: 'Buckets queuing at the standpipe.',
+        info: 'Community standpipes are present in areas where residents cannot afford a household connection. Yet, the water is not flowing 24/7. Thus in the early morning and evening hours people and buckets form long queues waiting for water.',
         center: {
-          lat: 5.5912087,
-          lng: -0.1797294
+          lat: 5.705077,
+          lng: -0.214591
         }
       },
       {
         id: 6,
         state: 'covered',
-        image: require('./image_06.jpg'),
-        info: 'Etiam Lorem Amet Fermentum',
+        image: require('./kufuor_gallon.jpg'),
+        title: 'Kufuor Gallons',
+        info: 'Yellow jerrycans, popularly known as Kufuor Gallons, are a common object in Accra´s households. The jerrycan start its life as a container for cooking oil. With the water crisis that hit the country during the presidency of John Kufuor (2001-2009) the gallon has become omnipresent as water storing facility in the city.',
         center: {
-          lat: 5.5912087,
-          lng: -0.1797294
+          lat: 5.695068,
+          lng: -0.034073
         }
       },
       {
         id: 6,
         state: 'covered',
-        image: require('./image_06.jpg'),
-        info: 'Etiam Lorem Amet Fermentum',
+        image: require('./kufuor_gallon.jpg'),
+        title: 'Kufuor Gallons',
+        info: 'Yellow jerrycans, popularly known as Kufuor Gallons, are a common object in Accra´s households. The jerrycan start its life as a container for cooking oil. With the water crisis that hit the country during the presidency of John Kufuor (2001-2009) the gallon has become omnipresent as water storing facility in the city.',
         center: {
-          lat: 5.5912087,
-          lng: -0.1797294
+          lat: 5.695068,
+          lng: -0.034073
         }
       },
       {
         id: 7,
         state: 'covered',
-        image: require('./image_07.jpg'),
-        info: 'Etiam Lorem Amet Fermentum',
+        image: require('./water_pipeline.jpg'),
+        title: 'Fragmented water supply.',
+        info: 'The Greater Accra Metropolitan Area has two sources of freshwater: Weija lake and Volta river. These sources provide enough raw water to serve the needs of the population. Yet, only about half of the population living in the Metropolitan area has direct access to piped water. In particular poor urban neighborhoods are not covered by piped water infrastructure.',
         center: {
-          lat: 5.5912087,
-          lng: -0.1797294
+          lat: 6.165763,
+          lng: 0.070056
         }
       },
       {
         id: 7,
         state: 'covered',
-        image: require('./image_07.jpg'),
-        info: 'Etiam Lorem Amet Fermentum',
+        image: require('./water_pipeline.jpg'),
+        title: 'Fragmented water supply.',
+        info: 'The Greater Accra Metropolitan Area has two sources of freshwater: Weija lake and Volta river. These sources provide enough raw water to serve the needs of the population. Yet, only about half of the population living in the Metropolitan area has direct access to piped water. In particular poor urban neighborhoods are not covered by piped water infrastructure.',
         center: {
-          lat: 5.5912087,
-          lng: -0.1797294
+          lat: 6.165763,
+          lng: 0.070056
         }
       },
       {
         id: 8,
         state: 'covered',
-        image: require('./image_08.jpg'),
-        info: 'Etiam Lorem Amet Fermentum',
+        image: require('./water_blessing.jpg'),
+        title: 'Water blessing.',
+        info: 'Started as an emergency and filling-the-gap measure to deal with the limited availability of piped water supply in Accra, mobile water tankers are nowadays a common way to access water. Mobile water vendors operate 24/7 delivering water to households, institutions, construction and beverage companies.',
         center: {
-          lat: 5.5912087,
-          lng: -0.1797294
+          lat: 5.695183,
+          lng: -0.288596
         }
       },
       {
         id: 8,
         state: 'covered',
-        image: require('./image_08.jpg'),
-        info: 'Etiam Lorem Amet Fermentum',
+        image: require('./water_blessing.jpg'),
+        title: 'Water blessing.',
+        info: 'Started as an emergency and filling-the-gap measure to deal with the limited availability of piped water supply in Accra, mobile water tankers are nowadays a common way to access water. Mobile water vendors operate 24/7 delivering water to households, institutions, construction and beverage companies.',
         center: {
-          lat: 5.5912087,
-          lng: -0.1797294
+          lat: 5.695183,
+          lng: -0.288596
         }
       },
       {
         id: 9,
         state: 'covered',
-        image: require('./image_09.jpg'),
-        info: 'Etiam Lorem Amet Fermentum',
+        image: require('./privatization.jpg'),
+        title: 'Water privatization?',
+        info: 'Many households set up small water retailing businesses selling water to their neighbors. The black container is a Polytank a common water storing facilities which is also used by residents as a tool to deal with drinking water rationing.',
         center: {
-          lat: 5.5912087,
-          lng: -0.1797294
+          lat: 5.695183,
+          lng: -0.288596
         }
       },
       {
         id: 9,
         state: 'covered',
-        image: require('./image_09.jpg'),
-        info: 'Etiam Lorem Amet Fermentum',
+        image: require('./privatization.jpg'),
+        title: 'Water privatization?',
+        info: 'Many households set up small water retailing businesses selling water to their neighbors. The black container is a Polytank a common water storing facilities which is also used by residents as a tool to deal with drinking water rationing.',
         center: {
-          lat: 5.5912087,
-          lng: -0.1797294
+          lat: 5.695183,
+          lng: -0.288596
         }
       },
     ];
@@ -243,7 +261,7 @@ class memoryCmpCtrl {
           center: {
               lat: card.center.lat,
               lng: card.center.lng,
-              zoom: 9
+              zoom: 12
           },
           defaults: {
               scrollWheelZoom: false

@@ -8,6 +8,7 @@ md-dialog
   md-dialog-content(layout="row" layout-xs="column" layout-align="space-between start" layout-padding)
     img(src="{{card.image}}" flex="33")
     div(flex="33" layout-padding)
+      h3 {{card.title}}
       p {{card.info}}
     div(flex="33")
       leaflet(center="center")
