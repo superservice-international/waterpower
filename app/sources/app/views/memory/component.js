@@ -231,6 +231,23 @@ class memoryCmpCtrl {
     });
 
     this._flexComponent();
+    this._showStartDialog();
+  }
+
+  _showStartDialog() {
+      /* @ngInject */
+      var StartDialogCtrl = ($scope, $mdDialog) => {
+        $scope.close = () => {
+          $mdDialog.hide();  
+        }
+      }
+
+      this.$mdDialog.show({
+        controller: StartDialogCtrl,
+        template: require('./start-dialog.jade')(),
+        parent: angular.element(document.body),
+        clickOutsideToClose: true,
+      })
   }
   
   turnCard(card){
