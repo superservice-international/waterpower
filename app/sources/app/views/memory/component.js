@@ -18,7 +18,7 @@ class memoryCmpCtrl {
       {
         id: 1,
         state: 'covered',
-        image: require('./keep_off.jpg'),
+        image: require('./img/keep_off.jpg'),
         title: 'Keep off!',
         info: 'Pressure for land for housing triggers disputes over land acquisition. In order to maintain their access to land urban and peri-urban dwellers build small structures or walls on their land and set up signs indicating the land has been already acquired.',
         center: {
@@ -29,7 +29,7 @@ class memoryCmpCtrl {
       {
         id: 1,
         state: 'covered',
-        image: require('./keep_off.jpg'),
+        image: require('./img/keep_off.jpg'),
         title: 'Keep off!',
         info: 'Pressure for land for housing triggers disputes over land acquisition. In order to maintain their access to land urban and peri-urban dwellers build small structures or walls on their land and set up signs indicating the land has been already acquired.',
         center: {
@@ -40,7 +40,7 @@ class memoryCmpCtrl {
       {
         id: 2,
         state: 'covered',
-        image: require('./urban_ag.jpg'),
+        image: require('./img/urban_ag.jpg'),
         title: 'Urban Agriculture.',
         info: 'Urban Agriculture accounts for 90% of the vegetables produced and consumed in Accra. Yet, many of the farmers face land insecurity and challenges in accessing safe water for irrigation.',
         center: {
@@ -51,7 +51,7 @@ class memoryCmpCtrl {
       {
         id: 2,
         state: 'covered',
-        image: require('./urban_ag.jpg'),
+        image: require('./img/urban_ag.jpg'),
         title: 'Urban Agriculture.',
         info: 'Urban Agriculture accounts for 90% of the vegetables produced and consumed in Accra. Yet, many of the farmers face land insecurity and challenges in accessing safe water for irrigation.',
         center: {
@@ -62,7 +62,7 @@ class memoryCmpCtrl {
       {
         id: 3,
         state: 'covered',
-        image: require('./luxury_housing.jpg'),
+        image: require('./img/luxury_housing.jpg'),
         title: 'Luxury housing in the wetland, Densu Delta',
         info: 'Sakumo Lagoon, Korle Lagoon and the delta of the Densu river located in Accra experience heavy encroachment due the rapid and uneven urbanization dynamics. Yet, not only poor urban dwellers encroach into wetlands but also luxury houses are built within the wetlands.',
         center: {
@@ -73,7 +73,7 @@ class memoryCmpCtrl {
       {
         id: 3,
         state: 'covered',
-        image: require('./luxury_housing.jpg'),
+        image: require('./img/luxury_housing.jpg'),
         title: 'Luxury housing in the wetland, Densu Delta',
         info: 'Sakumo Lagoon, Korle Lagoon and the delta of the Densu river located in Accra experience heavy encroachment due the rapid and uneven urbanization dynamics. Yet, not only poor urban dwellers encroach into wetlands but also luxury houses are built within the wetlands.',
         center: {
@@ -84,7 +84,7 @@ class memoryCmpCtrl {
       {
         id: 4,
         state: 'covered',
-        image: require('./water_sachet.jpg'),
+        image: require('./img/water_sachet.jpg'),
         title: 'Clean water!',
         info: 'Sachet water, consist of 500ml plastic bags of water heat-sealed. Popularly referred as Pure Water, its presence everywhere, low price together with the general perception of higher quality than tap water made it one of the main drinking water source for people living and working in Accra. But it is also convenient for cleaning hands.',
         center: {
@@ -95,7 +95,7 @@ class memoryCmpCtrl {
       {
         id: 4,
         state: 'covered',
-        image: require('./water_sachet.jpg'),
+        image: require('./img/water_sachet.jpg'),
         title: 'Clean water!',
         info: 'Sachet water, consist of 500ml plastic bags of water heat-sealed. Popularly referred as Pure Water, its presence everywhere, low price together with the general perception of higher quality than tap water made it one of the main drinking water source for people living and working in Accra. But it is also convenient for cleaning hands.',
         center: {
@@ -106,7 +106,7 @@ class memoryCmpCtrl {
       {
         id: 5,
         state: 'covered',
-        image: require('./water_buckets.jpg'),
+        image: require('./img/water_buckets.jpg'),
         title: 'Buckets queuing at the standpipe.',
         info: 'Community standpipes are present in areas where residents cannot afford a household connection. Yet, the water is not flowing 24/7. Thus in the early morning and evening hours people and buckets form long queues waiting for water.',
         center: {
@@ -117,7 +117,7 @@ class memoryCmpCtrl {
       {
         id: 5,
         state: 'covered',
-        image: require('./water_buckets.jpg'),
+        image: require('./img/water_buckets.jpg'),
         title: 'Buckets queuing at the standpipe.',
         info: 'Community standpipes are present in areas where residents cannot afford a household connection. Yet, the water is not flowing 24/7. Thus in the early morning and evening hours people and buckets form long queues waiting for water.',
         center: {
@@ -128,7 +128,7 @@ class memoryCmpCtrl {
       {
         id: 6,
         state: 'covered',
-        image: require('./kufuor_gallon.jpg'),
+        image: require('./img/kufuor_gallon.jpg'),
         title: 'Kufuor Gallons',
         info: 'Yellow jerrycans, popularly known as Kufuor Gallons, are a common object in Accra´s households. The jerrycan start its life as a container for cooking oil. With the water crisis that hit the country during the presidency of John Kufuor (2001-2009) the gallon has become omnipresent as water storing facility in the city.',
         center: {
@@ -139,7 +139,7 @@ class memoryCmpCtrl {
       {
         id: 6,
         state: 'covered',
-        image: require('./kufuor_gallon.jpg'),
+        image: require('./img/kufuor_gallon.jpg'),
         title: 'Kufuor Gallons',
         info: 'Yellow jerrycans, popularly known as Kufuor Gallons, are a common object in Accra´s households. The jerrycan start its life as a container for cooking oil. With the water crisis that hit the country during the presidency of John Kufuor (2001-2009) the gallon has become omnipresent as water storing facility in the city.',
         center: {
@@ -150,7 +150,7 @@ class memoryCmpCtrl {
       {
         id: 7,
         state: 'covered',
-        image: require('./water_pipeline.jpg'),
+        image: require('./img/water_pipeline.jpg'),
         title: 'Fragmented water supply.',
         info: 'The Greater Accra Metropolitan Area has two sources of freshwater: Weija lake and Volta river. These sources provide enough raw water to serve the needs of the population. Yet, only about half of the population living in the Metropolitan area has direct access to piped water. In particular poor urban neighborhoods are not covered by piped water infrastructure.',
         center: {
@@ -161,7 +161,7 @@ class memoryCmpCtrl {
       {
         id: 7,
         state: 'covered',
-        image: require('./water_pipeline.jpg'),
+        image: require('./img/water_pipeline.jpg'),
         title: 'Fragmented water supply.',
         info: 'The Greater Accra Metropolitan Area has two sources of freshwater: Weija lake and Volta river. These sources provide enough raw water to serve the needs of the population. Yet, only about half of the population living in the Metropolitan area has direct access to piped water. In particular poor urban neighborhoods are not covered by piped water infrastructure.',
         center: {
@@ -172,7 +172,7 @@ class memoryCmpCtrl {
       {
         id: 8,
         state: 'covered',
-        image: require('./water_blessing.jpg'),
+        image: require('./img/water_blessing.jpg'),
         title: 'Water blessing.',
         info: 'Started as an emergency and filling-the-gap measure to deal with the limited availability of piped water supply in Accra, mobile water tankers are nowadays a common way to access water. Mobile water vendors operate 24/7 delivering water to households, institutions, construction and beverage companies.',
         center: {
@@ -183,7 +183,7 @@ class memoryCmpCtrl {
       {
         id: 8,
         state: 'covered',
-        image: require('./water_blessing.jpg'),
+        image: require('./img/water_blessing.jpg'),
         title: 'Water blessing.',
         info: 'Started as an emergency and filling-the-gap measure to deal with the limited availability of piped water supply in Accra, mobile water tankers are nowadays a common way to access water. Mobile water vendors operate 24/7 delivering water to households, institutions, construction and beverage companies.',
         center: {
@@ -194,7 +194,7 @@ class memoryCmpCtrl {
       {
         id: 9,
         state: 'covered',
-        image: require('./privatization.jpg'),
+        image: require('./img/privatization.jpg'),
         title: 'Water privatization?',
         info: 'Many households set up small water retailing businesses selling water to their neighbors. The black container is a Polytank a common water storing facilities which is also used by residents as a tool to deal with drinking water rationing.',
         center: {
@@ -205,7 +205,7 @@ class memoryCmpCtrl {
       {
         id: 9,
         state: 'covered',
-        image: require('./privatization.jpg'),
+        image: require('./img/privatization.jpg'),
         title: 'Water privatization?',
         info: 'Many households set up small water retailing businesses selling water to their neighbors. The black container is a Polytank a common water storing facilities which is also used by residents as a tool to deal with drinking water rationing.',
         center: {

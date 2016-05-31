@@ -6,9 +6,10 @@ md-dialog
         md-icon close
 
   md-dialog-content(layout-xs="column" layout-sm"column" layout-gt-sm="row" layout-align="space-between start" layout-padding)
-    img(src="{{card.image}}" flex)
-    div(flex layout-padding)
+    div(flex-xs="none" flex-gt-sm="")
+      img(src="{{card.image}}")
+    div(flex-xs="none" flex-gt-sm="" layout-padding)
       h3 {{card.title}}
       p {{card.info}}
-    .map-container(flex)
+    .map-container(flex-xs="none" flex-gt-sm="")
       leaflet(center="center")

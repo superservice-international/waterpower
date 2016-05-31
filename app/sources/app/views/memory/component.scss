@@ -5,8 +5,11 @@
 
 md-dialog-content{
   img{
-    height: 100%;
-    width: 100%;
+    max-height: 500px;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    display: block;
   }
   .map-container{
     width: 100%;
