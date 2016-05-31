@@ -281,7 +281,8 @@ class memoryCmpCtrl {
               zoom: 12
           },
           defaults: {
-              scrollWheelZoom: false
+              scrollWheelZoom: false,
+              touchZoom: false
           }
         });
 
