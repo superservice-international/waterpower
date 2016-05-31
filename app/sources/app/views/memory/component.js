@@ -242,12 +242,15 @@ class memoryCmpCtrl {
         }
       }
 
-      this.$mdDialog.show({
-        controller: StartDialogCtrl,
-        template: require('./start-dialog.jade')(),
-        parent: angular.element(document.body),
-        clickOutsideToClose: true,
-      })
+      var callback = ()=> {
+        this.$mdDialog.show({
+          controller: StartDialogCtrl,
+          template: require('./start-dialog.jade')(),
+          parent: angular.element(document.body),
+          clickOutsideToClose: true,
+        })
+      }
+      this.$timeout(callback, 1000);
   }
   
   turnCard(card){
