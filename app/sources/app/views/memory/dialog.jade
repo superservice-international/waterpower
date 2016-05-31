@@ -5,10 +5,10 @@ md-dialog
       md-button.md-icon-button(ng-click="close()")
         md-icon close
 
-  md-dialog-content(layout="row" layout-xs="column" layout-align="space-between start" layout-padding)
-    img(src="{{card.image}}" flex="33")
-    div(flex="33" layout-padding)
+  md-dialog-content(layout-xs="column" layout-sm"column" layout-gt-sm"row" layout-align="space-between start" layout-padding)
+    img(src="{{card.image}}" flex)
+    div(flex layout-padding)
       h3 {{card.title}}
       p {{card.info}}
-    div(flex="33")
+    .map-container(flex)
       leaflet(center="center")
