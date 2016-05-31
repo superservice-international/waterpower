@@ -7,9 +7,9 @@ md-toolbar
     md-button.md-icon-button(ng-link="['Info']")
       md-icon info_outline
 
-md-content
-  div(layout="row" layout-align="center" flex)
-    div(layout="column" flex-xl="70" flex-lg="75" flex-md="80" flex)
+md-content(flex)
+  div(layout="row" layout-align="center" flex='grow')
+    div(layout="column" flex-xl="70" flex-lg="75" flex-md="80" flex="grow")
 
       div(layout="row" layout-align="center" flex="none" layout-padding)
         div(layout="column")
@@ -31,7 +31,7 @@ md-content
         md-button.md-fab(ng-click="$ctrl.resetGame()")
           md-icon replay
 
-  footer(layout="row" layout-align="space-around" layout-padding layout-wrap)
+  footer(layout="row" layout-align="space-around" layout-padding layout-wrap flex="shrink")
     div(flex-xl="10" flex-lg="15" flex-xs="50" flex-md="20" flex-sm="20")
       a(href="http://www.waterpower.science" target="_blank")
         img(src="/img/WaterPower_Logo.png")

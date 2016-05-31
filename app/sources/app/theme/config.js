@@ -5,36 +5,36 @@ import materialDesign from 'angular-material';
 let themeConfig = ($mdThemingProvider) => {
   $mdThemingProvider
     .theme('default')
-    //.primaryPalette('white')
-    .accentPalette('blue');
+    .primaryPalette('light-blue')
+    .accentPalette('orange');
 
-  $mdThemingProvider.definePalette('customPrimaryPalette', {
-    '50': 'ffffff',
-    '100': 'ffffff',
-    '200': 'ffffff',
-    '300': 'ffffff',
-    '400': 'ffffff',
-    '500': 'ffffff',
-    '600': 'ffffff',
-    '700': 'ffffff',
-    '800': 'ffffff',
-    '900': 'ffffff',
-    'A100': 'ffffff',
-    'A200': 'ffffff',
-    'A400': 'ffffff',
-    'A700': 'ffffff',
-    'contrastDefaultColor': 'dark',
-    'contrastLightColors': [],
-  });
+  //$mdThemingProvider.definePalette('customPrimaryPalette', {
+    //'50': 'ffffff',
+    //'100': 'ffffff',
+    //'200': 'ffffff',
+    //'300': 'ffffff',
+    //'400': 'ffffff',
+    //'500': 'ffffff',
+    //'600': 'ffffff',
+    //'700': 'ffffff',
+    //'800': 'ffffff',
+    //'900': 'ffffff',
+    //'A100': 'ffffff',
+    //'A200': 'ffffff',
+    //'A400': 'ffffff',
+    //'A700': 'ffffff',
+    //'contrastDefaultColor': 'dark',
+    //'contrastLightColors': [],
+  //});
 
-  $mdThemingProvider
-    .theme('default')
-    .primaryPalette('customPrimaryPalette', {
-      'default': '500',
-      'hue-1': '50',
-      'hue-2': '300',
-      'hue-3': '700',
-    });
+  //$mdThemingProvider
+    //.theme('default')
+    //.primaryPalette('customPrimaryPalette', {
+      //'default': '500',
+      //'hue-1': '50',
+      //'hue-2': '300',
+      //'hue-3': '700',
+    //});
 
   //$mdThemingProvider.definePalette('customAccentPalette', {
     //'50': 'ffffff',
