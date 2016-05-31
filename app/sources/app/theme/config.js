@@ -5,8 +5,8 @@ import materialDesign from 'angular-material';
 let themeConfig = ($mdThemingProvider) => {
   $mdThemingProvider
     .theme('default')
-    .primaryPalette('light-blue')
-    .accentPalette('orange');
+    .primaryPalette('blue')
+    .accentPalette('light-blue');
 
   //$mdThemingProvider.definePalette('customPrimaryPalette', {
     //'50': 'ffffff',
