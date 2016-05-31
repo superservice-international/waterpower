@@ -5,30 +5,39 @@ import materialDesign from 'angular-material';
 let themeConfig = ($mdThemingProvider) => {
   $mdThemingProvider
     .theme('default')
-    .primaryPalette('orange')
+    //.primaryPalette('white')
     .accentPalette('blue');
 
-  //$mdThemingProvider.definePalette('customPrimaryPalette', {
-    //'50': 'DFE0E1',
-    //'100': 'BEBFC2',
-    //'200': 'A8A9AD',
-    //'300': '939393',
-    //'400': '818181',
-    //'500': '717171',
-    //'600': '565656',
-    //'700': '424242',
-    //'800': '343434',
-    //'900': '1E1E1E',
-    //'A100': 'BEBFC2',
-    //'A200': 'A8A9AD',
-    //'A400': '818181',
-    //'A700': '424242',
-    //'contrastDefaultColor': 'dark',
-    //'contrastLightColors': ['400', '500', '600', '700', '800', '900', 'A400', 'A700'],
-  //});
+  $mdThemingProvider.definePalette('customPrimaryPalette', {
+    '50': 'ffffff',
+    '100': 'ffffff',
+    '200': 'ffffff',
+    '300': 'ffffff',
+    '400': 'ffffff',
+    '500': 'ffffff',
+    '600': 'ffffff',
+    '700': 'ffffff',
+    '800': 'ffffff',
+    '900': 'ffffff',
+    'A100': 'ffffff',
+    'A200': 'ffffff',
+    'A400': 'ffffff',
+    'A700': 'ffffff',
+    'contrastDefaultColor': 'dark',
+    'contrastLightColors': [],
+  });
+
+  $mdThemingProvider
+    .theme('default')
+    .primaryPalette('customPrimaryPalette', {
+      'default': '500',
+      'hue-1': '50',
+      'hue-2': '300',
+      'hue-3': '700',
+    });
 
   //$mdThemingProvider.definePalette('customAccentPalette', {
-    //'50': 'ACE7FF',
+    //'50': 'ffffff',
     //'100': '93E2FC',
     //'200': '7ADDF8',
     //'300': '60D8F5',
@@ -84,14 +93,6 @@ let themeConfig = ($mdThemingProvider) => {
     //'contrastLightColors': [],
   //});
 
-  //$mdThemingProvider
-    //.theme('default')
-    //.primaryPalette('grey', {
-      //'default': '500',
-      //'hue-1': '50',
-      //'hue-2': '300',
-      //'hue-3': '700',
-    //})
     //.accentPalette('red', {
       //'default': '500',
       //'hue-1': '50',
