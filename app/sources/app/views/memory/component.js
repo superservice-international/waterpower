@@ -283,6 +283,14 @@ class memoryCmpCtrl {
               lng: card.center.lng,
               zoom: 12
           },
+          markers: {
+            default: {
+              lat: card.center.lat,
+              lng: card.center.lng,
+              focus: true,
+              draggable: false
+            }
+          },
           defaults: {
               scrollWheelZoom: false,
               touchZoom: false
@@ -341,7 +349,7 @@ class memoryCmpCtrl {
 
       let alert = this.$mdDialog.alert({
         title: 'Congratulations!',
-        textContent: 'You won the game.',
+        textContent: 'Now you know about contested resources in Accra. What about your city?',
         ok: 'Close'
       });
 
