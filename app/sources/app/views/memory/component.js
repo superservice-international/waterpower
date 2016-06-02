@@ -254,6 +254,7 @@ class memoryCmpCtrl {
   }
 
   showInfoDialog() {
+    /* @ngInject */
     var InfoDialogCtrl = ($scope, $mdDialog) => {
       $scope.close = () => {
         $mdDialog.hide();  
