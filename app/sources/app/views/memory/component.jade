@@ -1,11 +1,6 @@
 md-toolbar
   .md-toolbar-tools
     h2 memorycontest.city
-    span(flex)
-    md-button.md-icon-button(ng-link="['Memory']")
-      md-icon play_circle_outline
-    md-button.md-icon-button(ng-link="['Info']")
-      md-icon info_outline
 
 md-content(flex)
   div(layout="row" layout-align="center" flex='grow')
@@ -22,14 +17,22 @@ md-content(flex)
           ng-click="$ctrl.turnCard(card)"
         )
 
-      div(ng-show="$ctrl.fsm.current==='win'" layout="row" layout-align="center")
-        md-button.md-fab(ng-click="$ctrl.resetGame()")
+      div(layout="row" layout-align="center")
+        md-button.md-fab.md-primary(id="info-fab" ng-click="$ctrl.showInfoDialog()")
+          md-icon info_outline
+        md-button.md-fab.md-primary(ng-show="$ctrl.fsm.current==='win'" ng-click="$ctrl.resetGame()")
           md-icon replay
 
-  footer(layout="row" layout-align="space-around" layout-padding layout-wrap flex="shrink")
+  footer(layout="row" layout-align="space-around" layout-padding layout-wrap)
     div(flex-xl="10" flex-lg="15" flex-xs="50" flex-md="20" flex-sm="20")
       a(href="http://www.waterpower.science" target="_blank")
         img(src="/img/WaterPower_Logo.png")
+    div(flex-xl="10" flex-lg="15" flex-xs="50" flex-md="20" flex-sm="20")
+      img(src="/img/DLR_2015_trans.png")
+    div(flex-xl="5" flex-lg="10" flex-xs="50" flex-md="20" flex-sm="20")
+      img(src="/img/BMBF_2015_trans.png")
+    div(flex-xl="5" flex-lg="10" flex-xs="50" flex-md="20" flex-sm="20")
+      img(src="/img/claim_fona_en.jpg")
     div(flex-xl="10" flex-lg="15" flex-xs="50" flex-md="20" flex-sm="20")
       a(href="http://www.superservice-international.com" target="_blank")
         img(src="/img/superservice.png")

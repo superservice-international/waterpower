@@ -252,6 +252,24 @@ class memoryCmpCtrl {
       }
       this.$timeout(callback, 1000);
   }
+
+  showInfoDialog() {
+    var InfoDialogCtrl = ($scope, $mdDialog) => {
+      $scope.close = () => {
+        $mdDialog.hide();  
+      }
+    }
+
+    this.$mdDialog.show({
+      controller: InfoDialogCtrl,
+      template: require('./dialogs/info.jade')(),
+      parent: angular.element(document.body),
+      clickOutsideToClose:true,
+      fullscreen: true,
+      openFrom: '#info-fab',
+      closeTo: '#info-fab'
+    });
+  }
   
   turnCard(card){
     if (card.state==='covered' && ['pristine', 'firstTurned'].indexOf(this.fsm.current) > -1) {

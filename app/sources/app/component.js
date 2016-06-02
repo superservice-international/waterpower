@@ -16,7 +16,6 @@ let appComponent = {
   template: require('./component.jade')(),
   $routeConfig: [
     {path: '/', name: 'Memory', component: 'memoryCmp', useAsDefault: true},
-    {path: '/info', name: 'Info', component: 'infoCmp'},
   ]
 };
 
