@@ -245,7 +245,7 @@ class memoryCmpCtrl {
       var callback = ()=> {
         this.$mdDialog.show({
           controller: StartDialogCtrl,
-          template: require('./start-dialog.jade')(),
+          template: require('./dialogs/start.jade')(),
           parent: angular.element(document.body),
           clickOutsideToClose: true,
         })
@@ -322,7 +322,7 @@ class memoryCmpCtrl {
       
       this.$mdDialog.show({
         controller: DialogCtrl,
-        template: require('./dialog.jade')(),
+        template: require('./dialogs/detail.jade')(),
         parent: angular.element(document.body),
         clickOutsideToClose:true,
         fullscreen: true,
