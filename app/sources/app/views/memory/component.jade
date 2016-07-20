@@ -2,14 +2,16 @@ md-toolbar
   .md-toolbar-tools
     h2 memorycontest.city
 
-md-content(flex)
-  div(layout="row" layout-align="center" flex='grow')
+md-content(flex layout="column")
+  div(layout="row" layout-align="center start" flex)
     div(layout="column" flex-xl="70" flex-lg="75" flex-md="80" flex="grow")
 
       div(layout="row" layout-wrap layout-align="center" flex)
         p Turn the cards, explore the city. Once you have a match, click on the pictures for more info!
-      div(layout="row" layout-wrap layout-align="center" flex)
+
+      div(layout="row" layout-wrap layout-align="center start")
         memory-card-cmp(
+          flex="none"
           flex-xs="33"
           flex-gt-xs="15"
           ng-repeat="card in $ctrl.memoryCardsRandom"
