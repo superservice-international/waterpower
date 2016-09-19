@@ -3,10 +3,11 @@ md-toolbar
     h2 memorycontest.city
 
 md-content(flex layout="column")
-  div(layout="row" layout-align="center start" flex)
-    div(layout="column" flex-xl="70" flex-lg="75" flex-md="80" flex="grow")
+  div(layout="row" layout-align="center start" flex="none")
 
-      div(layout="row" layout-wrap layout-align="center" flex)
+    div(layout="column" flex-xl="70" flex-lg="75" flex-md="80" flex)
+
+      div(layout="row" layout-wrap layout-align="center" flex layout-padding)
         p Turn the cards, explore the city. Once you have a match, click on the pictures for more info!
 
       div(layout="row" layout-wrap layout-align="center start")
@@ -27,7 +28,8 @@ md-content(flex layout="column")
         md-button.md-fab.md-primary(ng-show="$ctrl.fsm.current==='win'" ng-click="$ctrl.resetGame()")
           md-icon replay
 
-  footer(layout="row" layout-align="space-around" layout-padding layout-wrap)
+  span(flex)
+  footer(layout="row" layout-align="space-around" layout-padding layout-wrap flex="none")
     div(flex-xl="10" flex-lg="15" flex-xs="50" flex-md="20" flex-sm="20")
       a(href="http://www.waterpower.science" target="_blank")
         img(src="/img/WaterPower_Logo.png")
